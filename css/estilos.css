@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos del HOME */
+
+/*Header*/
+
+header {
+    
+    width: 100%;
+    height: 100px;   
+    display: flex;
+    flex-direction: row;
+     }
+
+/*.logo {
+    width: 250px;
+    height: 90px;
+    background-color: #0C446F;
+} */
+
+
+
+nav {
+    background-color: #0C446F;
+    padding: 0px;
+    display: inline;
+    width: 90%;  
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 700;
+    color: aliceblue;
+    
+}
+
+nav li {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: rgb(221, 79, 79);
+}
+
+
+
+/*Estilos del Body*/
+
+body {
+    background-color: #CBD2D3;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+main  {
+    width: 100%;
+}
+
+
+
+#seccionPrimera {
+
+    background-color: #CBD2D3;
+    height: 640px;
+   
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #CBD2D3;
+    height: 770px;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.flexContainer div {
+    width: 580px;
+    height: 580px;
+    margin: 20px;
+    background-color: #CBD2D3;
+}
+
+.containerIndex {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 1.6fr;
+    gap: 20px 20px;
+    margin-left: 90px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "articulo1 articulo2 articulo3"
+      "texto texto2 texto3"
+      ". . .";
+      justify-items: center;
+      height: 500px;
+  }
+  
+  .articulo1 { grid-area: articulo1; 
+               height: 350px;
+              ;
+               }
+  
+  .articulo2 { grid-area: articulo2;
+    height: 350px;
+    }
+  
+  .articulo3 { grid-area: articulo3;
+    height: 350px;
+    ;}
+  
+  .texto1 { grid-area: texto; 
+    height: 150px;
+    width: 350px;
+    margin-top: 20px;
+   text-align: justify;}
+  
+  .texto2 { grid-area: texto2;
+    height: 150px;
+    width: 350px;
+    margin-top: 20px;
+    text-align: justify;}
+  
+  .texto3 { grid-area: texto3; 
+    height: 150px;
+    width: 350px;
+    margin-top: 20px;
+    text-align: justify;}
+
+
+  
+
+h1 {
+    color: #FF5F58;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    color: #FF5F58;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+p{
+    color: #464646;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+
+.imagenCentral {
+
+
+width: 520px;
+height: 520px;
+margin-bottom: 10px;
+}
+
+
+.imagen {
+
+width: 40%;
+display: inline-block;
+vertical-align: top;
+margin-left: 20px;
+margin-right: 50px;
+padding-top: 10px;
+}
+
+.texto {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+
+footer {
+    background-color: #0C446F;
+    width: 100%;
+    height: 90px;  
+}
+    
+footer p {
+    color: aliceblue;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*ESTILOS DE LA HOJA DE SOMOS*/
+
+.flexSomos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #CBD2D3;
+    height: 680px;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.flexSomos div {
+    width: 480px;
+    height: 480px;
+    margin: 10px;
+    background-color: #CBD2D3;
+}
+
+.imgSomos {
+    width: 630px;
+    height: 480px;
+}
+
+/*Estilos de la hoja de HERRAMIENTAS*/
+
+.flexHerramientas  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100;
+    background-color: #CBD2D3;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.flexHerramientas div {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    background-color: #333333;
+}
+
+.imagenHerramientas {
+    width: 250px;
+    height: 250px;
+}
+
+h3 {
+    color: #FF5F58;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*ESTILOS DE LA HOJA DE CLIENTES*/
+
+.img_carousel {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #464646;
+    
+}
+
+.main_clientes {width: 100%;
+    height: 731px;
+
+
+}
+
+/*ESTILOS DE LA HOJA DE CONTACTO*/
+
+.main_contacto {
+    width: 100%;
+    height: 731px;
+}
+
+
+
+
+
